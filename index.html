@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="App">
+
+        <div class="player-top">
+            <div class="player-cover">
+                <img  id="img"   src="img/1.jpg" alt="">
+            </div>
+
+
+            <div class="player-contorol">
+                <div class="like">
+                    <span>
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="link">
+                    <span>
+                       <a href="https://music-fa.com/download-song/3120/" target="_blank"> <i class="bi bi-box-arrow-up-right"></i></a>
+                    </span>
+                </div>
+                <div class="preve">
+                    <span>
+                        <i class="bi bi-skip-start"></i>
+                    </span>
+                </div>
+                <div class="next">
+                    <span>
+                        <i class="bi bi-skip-end"></i>
+                    </span>
+                </div>
+                <div class="stopstart">
+                    <span>
+                        <i id="stop" class="fa fa-play" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" play">
+            <div class="info">
+                <div>
+                    <div class="album">Shahab Mozaffari</div>
+                    <div class="track">Delbarito</div>
+                </div>
+                <div class="time"></div>
+            </div>
+            <div class="buttom">
+                <div class="spend-time"></div>
+                <input  id="test" type="range" min="0" max="" value="">
+                <div class="dura">00:00</div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <audio autoplay>
+            <source id="trak" src="audio/Shahab Mozaffari - Delbarito Kamtaresh Kon (320).mp3" type="audio/mp3">
+        </audio>
+    </section>
+</body>
+<script src="js/master.js"></script>
+<script src="https://use.fontawesome.com/87c9c24b18.js"></script>
+</html>
